@@ -1,13 +1,19 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>graph coloring</title></head>
-<body>
-	<canvas id="canvas" width="1000" height="500" style="border:5px solid grey;"></canvas><br />
-	<input type="button" value="drawVertex" onclick="circle()" >
-	<input type="button" value="drawEdge" onclick="line()" >
-	<input type="button" value="check the graph connectivity" onclick="check_connectivity()" >
-	<input type="button" value="graph color" onclick="graphColor()" >
-	<input type="button" value="clear screen" onclick="clearScreen()" >
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>graph coloring</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color:grey">
+	<canvas id="canvas" width="1000" height="500" style="border:5px solid black;background-color:white;"></canvas><br />
+	<input type="button" class="btn btn-info" value="drawVertex" onclick="circle()" >
+	<input type="button" class="btn btn-info" value="drawEdge" onclick="line()" >
+	<input type="button" class="btn btn-info" value="check the graph connectivity" onclick="check_connectivity()" >
+	<input type="button" class="btn btn-info" value="graph color" onclick="graphColor()" >
+	<input type="button" class="btn btn-info" value="clear screen" onclick="clearScreen()" >
 <script src="graph_coloring.js"></script>
 </body>
 </html>
